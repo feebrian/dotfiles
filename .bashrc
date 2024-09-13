@@ -162,10 +162,19 @@ alias lot="logout"
 
 alias gf="git fetch"
 alias gp="git pull"
-alias gs="git status"
+alias gst="git status"
 alias ga="git add"
 alias gc="git commit -m"
 alias gi="git init"
+alias gs="git stash"
+alias gsu="git stash -u"
+alias gsp="git stash pop"
 
 alias dc="docker-compose"
 alias dr="docker run"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
