@@ -130,29 +130,14 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="~/.local/bin:$PATH"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
-# g
-[ -s "${HOME}/.g/env" ] && \. "${HOME}/.g/env"  # g shell setup
-
 # zoxide
 eval "$(zoxide init bash)"
-
-# fuck
-eval "$(thefuck --alias)"
-
-# cargo
-. "$HOME/.cargo/env"
-
-# atuin
-. "$HOME/.atuin/bin/env"
-
-[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-eval "$(atuin init bash)"
 
 # aliases
 alias cd="z"
 alias q="exit"
 alias ls="exa --group-directories-first --icons --header"
-alias cat="batcat"
+alias cat="bat"
 alias vh="nvim ."
 alias ch="code ."
 
@@ -173,8 +158,7 @@ alias gsp="git stash pop"
 alias dc="docker-compose"
 alias dr="docker run"
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+[ -s "${HOME}/.g/env" ] && \. "${HOME}/.g/env"  # g shell setup
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export PATH=$PATH:/home/insmnxa/.spicetify
