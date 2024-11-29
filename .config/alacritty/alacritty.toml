@@ -1,12 +1,12 @@
-live_config_reload = true
+# live_config_reload = true
 
-import = [
-  "~/.config/alacritty/themes/themes/dracula.toml"
-]
+# import = [
+#   "~/.config/alacritty/themes/themes/dracula.toml"
+# ]
 
-[shell]
+# [shell]
 # program = "/bin/fish"
-args = ["-c", "tmux"]
+# args = ["-c", "tmux"]
 
 [window]
 opacity = 0.95
@@ -15,7 +15,7 @@ padding = { x = 8, y = 4 }
 dynamic_padding = true
 dynamic_title = false
 title = "insmnxa"
-startup_mode = "fullscreen"
+startup_mode = "windowed"
 
 [env]
 WINIT_X11_SCALE_FACTOR = "1.0"
