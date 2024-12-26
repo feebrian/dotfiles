@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
 
 # program launcher
 super + @space
@@ -147,3 +147,10 @@ XF86AudioLowerVolume
 # Mute/unmute audio
 XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle # Toggle mute
+
+# Screenshot
+Print
+    mkdir -p ~/pictures/screenshots && scrot ~/pictures/screenshots/screenshot_$(date +'%Y-%m-%d_%H-%M-%S').png
+
+Shift + Print
+    mkdir -p ~/pictures/screenshots && scrot -s ~/pictures/screenshots/screenshot_$(date +'%Y-%m-%d_%H-%M-%S').png
