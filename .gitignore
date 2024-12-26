@@ -1,3 +1,5 @@
+.vscode/
+
 .config/.gsd-keyboard.settings-ported
 .config/GNOME-xdg-terminals.list
 .config/mimeapps.list
