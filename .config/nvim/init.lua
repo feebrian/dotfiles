@@ -1,0 +1,5 @@
+require("config.options")
+require("config.mappings")
+require("config.lazy")
+require("config.dashboard_setup")
+require("config.bufferline_setup")
